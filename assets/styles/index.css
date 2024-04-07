@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main section {
+  width: 85%;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
