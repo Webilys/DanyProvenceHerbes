@@ -1,5 +1,7 @@
 header {
   background: url(../img/bg-title.png) center/cover;
+  background-attachment: fixed;
+
   .overlay {
     background: $color1-50;
     .header {
@@ -40,6 +42,21 @@ header {
     }
 
     .title-page {
+      width: 80%;
+      margin: 0 auto;
+      p {
+        color: $white;
+        &:first-of-type {
+          padding-top: 50px;
+        }
+        &:last-of-type {
+          padding-bottom: 50px;
+        }
+      }
+
+      button {
+        margin-bottom: 50px;
+      }
     }
   }
 }

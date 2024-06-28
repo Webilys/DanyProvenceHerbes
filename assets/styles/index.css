@@ -18,7 +18,7 @@ body {
 
 h1 {
   color: #ffffff;
-  padding: 20px;
+  padding: 50px 0;
 }
 
 h1,
@@ -37,8 +37,35 @@ a:visited {
   font-weight: normal;
 }
 
+button {
+  background: transparent;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button a {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+button:hover a {
+  background: #ffffff;
+  color: #2d6c7a;
+}
+
 header {
   background: url(../img/bg-title.png) center/cover;
+  background-attachment: fixed;
 }
 header .overlay {
   background: rgba(45, 108, 122, 0.5);
@@ -82,6 +109,23 @@ header .overlay .header div nav ul li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+header .overlay .title-page {
+  width: 80%;
+  margin: 0 auto;
+}
+header .overlay .title-page p {
+  color: #ffffff;
+}
+header .overlay .title-page p:first-of-type {
+  padding-top: 50px;
+}
+header .overlay .title-page p:last-of-type {
+  padding-bottom: 50px;
+}
+header .overlay .title-page button {
+  margin-bottom: 50px;
+}
+
 main section {
   width: 85%;
   margin: 0 auto;
