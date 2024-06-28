@@ -1,14 +1,87 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/montserrat.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  font-family: montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
 }
 
+body {
+  color: #333333;
+}
+
+h1 {
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+a,
+a:focus,
+a:visited {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+header {
+  background: url(../img/bg-title.png) center/cover;
+}
+header .overlay {
+  background: rgba(45, 108, 122, 0.5);
+}
+header .overlay .header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+header .overlay .header div {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+}
+header .overlay .header div img {
+  height: 120px;
+}
+header .overlay .header div nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .overlay .header div nav ul li {
+  list-style: none;
+  margin: 50px 20px 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header .overlay .header div nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .overlay .header div nav ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 main section {
   width: 85%;
   margin: 0 auto;
