@@ -84,6 +84,26 @@ header .overlay .header div {
 header .overlay .header div img {
   height: 120px;
 }
+header .overlay .header div .menu-icons {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  header .overlay .header div .menu-icons {
+    display: block;
+  }
+}
+header .overlay .header div .menu-icons i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+header .overlay .header div .menu-icons #close-icon {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  header .overlay .header div nav {
+    display: none;
+  }
+}
 header .overlay .header div nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
