@@ -40,7 +40,7 @@ Artisanat provençal"
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body onload="windowLoad()">
     <header>
       <div class="overlay">
         <div class="header">
@@ -49,8 +49,16 @@ Artisanat provençal"
           </div>
           <div>
             <div class="menu-icons">
-              <i class="fa-solid fa-ellipsis-vertical" id="open-icon"></i>
-              <i class="fa-regular fa-circle-xmark" id="close-icon"></i>
+              <i
+                class="fa-solid fa-ellipsis-vertical"
+                id="open-icon"
+                onclick="openNav()"
+              ></i>
+              <i
+                class="fa-regular fa-circle-xmark"
+                id="close-icon"
+                onclick="closeNav()"
+              ></i>
             </div>
             <nav>
               <ul>

@@ -74,6 +74,12 @@ header .overlay .header {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 840px) {
+  header .overlay .header {
+    grid-template-columns: 80% 20%;
+    width: 80%;
+  }
+}
 header .overlay .header div {
   display: grid;
   -webkit-box-align: center;
@@ -96,6 +102,11 @@ header .overlay .header div .menu-icons i {
   font-size: 2rem;
   color: #ffffff;
 }
+@media screen and (max-width: 840px) {
+  header .overlay .header div .menu-icons i {
+    margin-top: 50px;
+  }
+}
 header .overlay .header div .menu-icons #close-icon {
   display: none;
 }
@@ -114,6 +125,11 @@ header .overlay .header div nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 840px) {
+  header .overlay .header div nav ul {
+    display: block;
+  }
 }
 header .overlay .header div nav ul li {
   list-style: none;
