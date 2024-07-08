@@ -20,3 +20,26 @@ button {
     }
   }
 }
+
+.buttonBlue {
+  background: transparent;
+  border: none;
+  transition: 0.2s;
+  a {
+    border: 2px solid $color1;
+    color: $color1;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 0;
+    box-shadow: 0 0 10px $blackShadow;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    a {
+      background: $color1;
+      color: $white;
+    }
+  }
+}

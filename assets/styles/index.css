@@ -63,6 +63,32 @@ button:hover a {
   color: #2d6c7a;
 }
 
+.buttonBlue {
+  background: transparent;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.buttonBlue a {
+  border: 2px solid #2d6c7a;
+  color: #2d6c7a;
+  font-size: 1rem;
+  padding: 10px 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.buttonBlue:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.buttonBlue:hover a {
+  background: #2d6c7a;
+  color: #ffffff;
+}
+
 header {
   background: url(../img/bg-title.png) center/cover;
   background-attachment: fixed;
@@ -151,6 +177,7 @@ header .overlay .title-page {
 }
 header .overlay .title-page p {
   color: #ffffff;
+  font-size: 1.1rem;
 }
 header .overlay .title-page p:first-of-type {
   padding-top: 50px;
@@ -165,4 +192,129 @@ header .overlay .title-page button {
 main section {
   width: 85%;
   margin: 0 auto;
+}
+
+#home .products {
+  padding: 50px 0;
+}
+#home .products h2 {
+  padding-bottom: 50px;
+}
+#home .products .productsContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#home .products .productsContainer a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#home .products .productsContainer a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#home .products .productsContainer a .product {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#home .products .productsContainer a .overlay {
+  background: rgba(45, 108, 122, 0.25);
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+#home .products .productsContainer a .overlay h3 {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#home .products .productsContainer a #product1 {
+  background: url(../img/herbes.png) no-repeat center/cover;
+}
+#home .products .productsContainer a #product2 {
+  background: url(../img/thym.png) no-repeat center/cover;
+}
+#home .products .productsContainer a #product3 {
+  background: url(../img/romarin.png) no-repeat center/cover;
+}
+#home .about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+#home .about div {
+  text-align: justify;
+}
+#home .about div h2 {
+  text-align: justify;
+}
+#home .about div p {
+  padding-bottom: 50px;
+  text-align: justify;
+}
+#home .actus {
+  background: url(../img/actus.png) center/cover;
+  background-attachment: fixed;
+}
+#home .actus .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#home .actus .overlay h2 {
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+#home .actus .overlay .actusContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#home .actus .overlay .actusContainer a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#home .actus .overlay .actusContainer a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#home .actus .overlay .actusContainer a img {
+  width: 80%;
+  margin: 20px;
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+#home .actus .overlay .actusContainer a .actu h3 {
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+#home .actus .overlay .actusContainer a .actu p {
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
