@@ -1,2 +1,29 @@
 footer {
+  padding: 50px 0;
+
+  .footerContainer {
+    width: 80%;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: $color1;
+    border-bottom: 1px solid $color1;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      padding: 5px 0;
+
+      a {
+        color: $text;
+      }
+    }
+  }
 }
