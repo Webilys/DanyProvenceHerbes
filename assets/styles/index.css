@@ -16,11 +16,6 @@ body {
   color: #333333;
 }
 
-h1 {
-  color: #ffffff;
-  padding: 50px 0;
-}
-
 h1,
 h2,
 h3,
@@ -28,6 +23,15 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+}
+
+h1 {
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 a,
@@ -92,6 +96,8 @@ button:hover a {
 header {
   background: url(../img/bg-title.png) center/cover;
   background-attachment: fixed;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 header .overlay {
   background: rgba(45, 108, 122, 0.5);
@@ -115,6 +121,12 @@ header .overlay .header div {
 }
 header .overlay .header div img {
   height: 120px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header .overlay .header div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 header .overlay .header div .menu-icons {
   display: none;
@@ -166,6 +178,14 @@ header .overlay .header div nav ul li {
 header .overlay .header div nav ul li a {
   text-decoration: none;
   color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header .overlay .header div nav ul li a:hover {
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 header .overlay .header div nav ul li:hover {
   -webkit-transform: scale(1.2);
@@ -174,6 +194,10 @@ header .overlay .header div nav ul li:hover {
 header .overlay .title-page {
   width: 80%;
   margin: 0 auto;
+}
+header .overlay .title-page .titlePage {
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 header .overlay .title-page p {
   color: #ffffff;
@@ -196,6 +220,8 @@ main section {
 
 footer {
   padding: 50px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 footer .footerContainer {
   width: 80%;
@@ -204,18 +230,39 @@ footer .footerContainer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+footer .footerContainer div {
+  padding: 20px;
+}
+footer img {
+  width: 80%;
+  margin: 0 auto;
+}
 footer h2 {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
   color: #2d6c7a;
-  border-bottom: 1px solid #2d6c7a;
+  font-size: 1.2rem;
 }
 footer ul li {
   list-style: none;
-  padding: 5px 0;
+  padding: 7px 0;
 }
-footer ul li a {
+footer a {
   color: #333333;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer a:hover {
+  color: #2d6c7a;
+}
+footer #separateur {
+  margin: 20px;
+  color: #2d6c7a;
+  font-size: 1.3rem;
+}
+footer .copyright p {
+  font-size: 0.9rem;
+}
+footer .copyright p i {
+  color: #2d6c7a;
 }
 
 #home .products {
@@ -330,15 +377,106 @@ footer ul li a {
 }
 #home .actus .overlay .actusContainer a img {
   width: 80%;
-  margin: 20px;
+  margin: 20px 20px 30px;
   border-radius: 360px;
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 #home .actus .overlay .actusContainer a .actu h3 {
-  padding-bottom: 20px;
   color: #ffffff;
 }
 #home .actus .overlay .actusContainer a .actu p {
   color: #ffffff;
+  padding: 30px 20px;
+}
+
+#about .about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+#about .about div {
+  text-align: justify;
+}
+#about .about div h2 {
+  text-align: justify;
+}
+#about .about div p {
+  text-align: justify;
+}
+#about .recolte {
+  background: url(../img/zone2.jpg) center/cover;
+  background-attachment: fixed;
+}
+#about .recolte .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#about .recolte .overlay h2 {
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+#about .recolte .overlay .recolteContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#about .recolte .overlay .recolteContainer a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#about .recolte .overlay .recolteContainer a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#about .recolte .overlay .recolteContainer a img {
+  width: 80%;
+  margin: 20px 20px 30px;
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+#about .recolte .overlay .recolteContainer a .actu h3 {
+  color: #ffffff;
+}
+#about .recolte .overlay .recolteContainer a .actu p {
+  color: #ffffff;
+  padding: 30px 20px;
+}
+#about .cta {
+  background: url(../img/actus.png) center/cover;
+  background-attachment: fixed;
+}
+#about .cta .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#about .cta .overlay .ctaContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#about .cta .overlay .ctaContainer h2 {
+  color: #ffffff;
+}
+#about .cta .overlay .ctaContainer p {
+  color: #ffffff;
+  padding: 30px 20px 50px;
 }/*# sourceMappingURL=index.css.map */

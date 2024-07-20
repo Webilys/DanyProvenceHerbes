@@ -1,5 +1,6 @@
 footer {
   padding: 50px 0;
+  box-shadow: 0 0 10px $blackShadow;
 
   .footerContainer {
     width: 80%;
@@ -7,22 +8,48 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    div {
+      padding: 20px;
+    }
+  }
+  img {
+    width: 80%;
+    margin: 0 auto;
   }
 
   h2 {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
     color: $color1;
-    border-bottom: 1px solid $color1;
+    font-size: 1.2rem;
   }
 
   ul {
     li {
       list-style: none;
-      padding: 5px 0;
+      padding: 7px 0;
+    }
+  }
 
-      a {
-        color: $text;
+  a {
+    color: $text;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color1;
+    }
+  }
+
+  #separateur {
+    margin: 20px;
+    color: $color1;
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    p {
+      font-size: 0.9rem;
+      i {
+        color: $color1;
       }
     }
   }

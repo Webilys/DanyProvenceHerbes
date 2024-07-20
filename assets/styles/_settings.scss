@@ -34,11 +34,6 @@ body {
   color: $text;
 }
 
-h1 {
-  color: $white;
-  padding: 50px 0;
-}
-
 h1,
 h2,
 h3,
@@ -46,6 +41,15 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+}
+
+h1 {
+  color: $white;
+  padding: 50px 0;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 a,
