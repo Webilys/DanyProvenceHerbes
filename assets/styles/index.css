@@ -408,7 +408,7 @@ footer .copyright p i {
 }
 #about .about div img {
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 #about .about div h2 {
   text-align: justify;
@@ -478,7 +478,7 @@ footer .copyright p i {
 }
 #about .recolte p {
   width: 80%;
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
 }
 #about .recolte .recolteContainer {
   width: 80%;
@@ -499,12 +499,6 @@ footer .copyright p i {
   padding: 10px;
   -webkit-box-shadow: 0 0 10px #2d6c7a;
           box-shadow: 0 0 10px #2d6c7a;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-#about .recolte .recolteContainer img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 #about .cta {
   background: url(../img/actus.webp) center/cover;
