@@ -518,4 +518,55 @@ footer .copyright p i {
 #about .cta .overlay .ctaContainer p {
   color: #ffffff;
   padding: 30px 20px 50px;
+}
+
+#nos-produits .productsContainer {
+  padding: 50px 0;
+}
+#nos-produits .productsContainer .product {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#nos-produits .productsContainer .product img {
+  width: 100%;
+}
+#nos-produits .productsContainer .product h2 {
+  padding-bottom: 30px;
+}
+#nos-produits .productsContainer .product p {
+  padding-bottom: 50px;
+}
+#nos-produits .productsContainer #product1,
+#nos-produits .productsContainer #product3 {
+  grid-template-columns: 30% 70%;
+}
+#nos-produits .productsContainer #product2 {
+  grid-template-columns: 70% 30%;
+}
+#nos-produits .cta {
+  background: url(../img/actus.webp) center/cover;
+  background-attachment: fixed;
+}
+#nos-produits .cta .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#nos-produits .cta .overlay .ctaContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#nos-produits .cta .overlay .ctaContainer h2 {
+  color: #ffffff;
+}
+#nos-produits .cta .overlay .ctaContainer p {
+  color: #ffffff;
+  padding: 30px 20px 50px;
 }/*# sourceMappingURL=index.css.map */
