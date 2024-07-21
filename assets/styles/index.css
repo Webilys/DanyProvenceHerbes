@@ -94,7 +94,7 @@ button:hover a {
 }
 
 header {
-  background: url(../img/bg-title.png) center/cover;
+  background: url(../img/bg-title.webp) center/cover;
   background-attachment: fixed;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -309,13 +309,13 @@ footer .copyright p i {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #home .products .productsContainer a #product1 {
-  background: url(../img/herbes.png) no-repeat center/cover;
+  background: url(../img/herbes.webp) no-repeat center/cover;
 }
 #home .products .productsContainer a #product2 {
-  background: url(../img/thym.png) no-repeat center/cover;
+  background: url(../img/thym.webp) no-repeat center/cover;
 }
 #home .products .productsContainer a #product3 {
-  background: url(../img/romarin.png) no-repeat center/cover;
+  background: url(../img/romarin.webp) no-repeat center/cover;
 }
 #home .about {
   width: 80%;
@@ -335,7 +335,7 @@ footer .copyright p i {
   text-align: justify;
 }
 #home .actus {
-  background: url(../img/actus.png) center/cover;
+  background: url(../img/actus.webp) center/cover;
   background-attachment: fixed;
 }
 #home .actus .overlay {
@@ -396,18 +396,29 @@ footer .copyright p i {
   padding: 50px 0;
   display: grid;
   grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #about .about div {
   text-align: justify;
 }
+#about .about div img {
+  width: 80%;
+  margin: 0 auto;
+}
 #about .about div h2 {
   text-align: justify;
+  padding-bottom: 30px;
 }
 #about .about div p {
   text-align: justify;
 }
 #about .valeursMissions {
-  background: url(../img/figure1.png) center/cover;
+  background: url(../img/figure1.webp) center/cover;
   background-attachment: fixed;
 }
 #about .valeursMissions .overlay {
@@ -496,7 +507,7 @@ footer .copyright p i {
           transform: scale(1.5);
 }
 #about .cta {
-  background: url(../img/actus.png) center/cover;
+  background: url(../img/actus.webp) center/cover;
   background-attachment: fixed;
 }
 #about .cta .overlay {
