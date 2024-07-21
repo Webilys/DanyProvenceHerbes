@@ -569,4 +569,70 @@ footer .copyright p i {
 #nos-produits .cta .overlay .ctaContainer p {
   color: #ffffff;
   padding: 30px 20px 50px;
+}
+
+#actualites .actus {
+  padding: 50px 0;
+}
+#actualites .actus .actusContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#actualites .actus .actusContainer a {
+  background: transparent;
+  border: 1px solid #2d6c7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px #2d6c7a;
+          box-shadow: 0 0 10px #2d6c7a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#actualites .actus .actusContainer a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#actualites .actus .actusContainer a img {
+  width: 80%;
+  margin: 20px 20px 30px;
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 10px #2d6c7a;
+          box-shadow: 0 0 10px #2d6c7a;
+}
+#actualites .actus .actusContainer a .actu h3 {
+  color: #2d6c7a;
+}
+#actualites .actus .actusContainer a .actu p {
+  color: #333333;
+  padding: 30px 20px;
+}
+#actualites .cta {
+  background: url(../img/actus.webp) center/cover;
+  background-attachment: fixed;
+}
+#actualites .cta .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#actualites .cta .overlay .ctaContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#actualites .cta .overlay .ctaContainer h2 {
+  color: #ffffff;
+}
+#actualites .cta .overlay .ctaContainer p {
+  color: #ffffff;
+  padding: 30px 20px 50px;
 }/*# sourceMappingURL=index.css.map */
