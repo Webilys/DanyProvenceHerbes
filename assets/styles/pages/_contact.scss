@@ -1,0 +1,99 @@
+#contact {
+  .contactForm {
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      padding-bottom: 50px;
+    }
+
+    form {
+      border: 1px solid $color1;
+      padding: 20px;
+
+      label {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+
+        input {
+          width: 80%;
+          margin: 10px auto;
+          display: block;
+          padding: 5px 10px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid $text;
+          transition: 0.2s;
+          outline: $color1;
+
+          &:hover,
+          &:active {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid $color1;
+          }
+        }
+
+        textarea {
+          width: 80%;
+          margin: 10px auto 30px;
+          display: block;
+          padding: 5px 10px;
+          border: 1px solid $text;
+          transition: 0.2s;
+          outline: $color1;
+
+          &:hover,
+          &:active {
+            border: 2px solid $color1;
+          }
+        }
+      }
+
+      button {
+        background: transparent;
+        transition: 0.2s;
+        border: 2px solid $color1;
+        color: $color1;
+        font-size: 1rem;
+        padding: 10px 20px;
+        transition: 0.2s;
+        border-radius: 0;
+        box-shadow: 0 0 10px $blackShadow;
+
+        &:hover {
+          transform: scale(1.05);
+          background: $color1;
+          color: $white;
+        }
+      }
+    }
+  }
+  .cta {
+    background: url(../img/actus.webp) center/cover;
+    background-attachment: fixed;
+
+    .overlay {
+      background: $color1-50;
+      padding: 50px 0;
+
+      .ctaContainer {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+          color: $white;
+        }
+
+        p {
+          color: $white;
+          padding: 30px 20px 50px;
+        }
+      }
+    }
+  }
+}
