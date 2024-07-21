@@ -13,62 +13,95 @@
         text-align: justify;
       }
       p {
-        // padding-bottom: 50px;
         text-align: justify;
       }
     }
   }
 
-  .recolte {
-    background: url(../img/zone2.jpg) center/cover;
+  .valeursMissions {
+    background: url(../img/figure1.png) center/cover;
     background-attachment: fixed;
 
     .overlay {
       background: $color1-50;
       padding: 50px 0;
+
       h2 {
         color: $white;
         padding-bottom: 50px;
       }
+      p {
+        width: 80%;
+        margin: 0 auto 50px;
+        color: $white;
+      }
 
-      .recolteContainer {
+      .valeursMissionsContainer {
         width: 80%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        align-items: center;
+        justify-content: center;
 
-        a {
-          background: transparent;
+        div {
+          width: 100%;
+          height: 100%;
           border: 1px solid $white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 20px;
-          box-shadow: 0 0 10px $whiteShadow;
-          transition: 0.2s;
+          padding: 30px 20px;
+          box-shadow: 0 0 10px $white;
 
-          &:hover {
-            transform: scale(1.05);
+          i {
+            color: $white;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px $whiteShadow;
           }
 
-          img {
-            width: 80%;
-            margin: 20px 20px 30px;
-            border-radius: 360px;
-            box-shadow: 0 0 10px $whiteShadow;
+          h3 {
+            color: $white;
+            padding-bottom: 30px;
           }
 
-          .actu {
-            h3 {
-              color: $white;
-            }
-
-            p {
-              color: $white;
-              padding: 30px 20px;
-            }
+          p {
+            width: 100%;
+            margin: 0 auto;
+            color: $white;
           }
+        }
+      }
+    }
+  }
+
+  .recolte {
+    padding: 50px 0;
+
+    h2 {
+      padding-bottom: 50px;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto 30px;
+    }
+
+    .recolteContainer {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        background: $white;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 0 10px $color1;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.5);
         }
       }
     }
