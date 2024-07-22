@@ -572,7 +572,7 @@ footer .copyright p i {
   gap: 20px;
 }
 #actualites .actus .actusContainer a {
-  background: transparent;
+  background: rgba(45, 108, 122, 0.25);
   border: 1px solid #2d6c7a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,6 +602,7 @@ footer .copyright p i {
 }
 #actualites .actus .actusContainer a .actu h3 {
   color: #2d6c7a;
+  text-shadow: 0 0 10px #ffffff;
 }
 #actualites .actus .actusContainer a .actu p {
   color: #333333;
