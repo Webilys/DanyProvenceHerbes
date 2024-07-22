@@ -355,7 +355,7 @@ footer .copyright p i {
   gap: 20px;
 }
 #home .actus .overlay .actusContainer a {
-  background: transparent;
+  background: rgba(45, 108, 122, 0.25);
   border: 1px solid #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
