@@ -20,5 +20,13 @@
         color: $black;
       }
     }
+
+    ul {
+      padding-bottom: 30px;
+      li {
+        list-style-position: inside;
+        text-align: justify;
+      }
+    }
   }
 }

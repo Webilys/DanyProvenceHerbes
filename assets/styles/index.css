@@ -733,4 +733,11 @@ footer .copyright p i {
 }
 #legal .legalContainer a:hover {
   color: #000000;
+}
+#legal .legalContainer ul {
+  padding-bottom: 30px;
+}
+#legal .legalContainer ul li {
+  list-style-position: inside;
+  text-align: justify;
 }/*# sourceMappingURL=index.css.map */
