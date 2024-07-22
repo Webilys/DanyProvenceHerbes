@@ -14,6 +14,7 @@
 
 body {
   color: #333333;
+  line-height: 25px;
 }
 
 h1,
@@ -425,20 +426,11 @@ footer .copyright p i {
   background: rgba(45, 108, 122, 0.5);
   padding: 50px 0;
 }
-#about .valeursMissions .overlay h2 {
-  color: #ffffff;
-  padding-bottom: 50px;
-}
-#about .valeursMissions .overlay p {
-  width: 80%;
-  margin: 0 auto 50px;
-  color: #ffffff;
-}
 #about .valeursMissions .overlay .valeursMissionsContainer {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -454,21 +446,20 @@ footer .copyright p i {
   padding: 30px 20px;
   -webkit-box-shadow: 0 0 10px #ffffff;
           box-shadow: 0 0 10px #ffffff;
+  background: rgba(45, 108, 122, 0.25);
+  text-align: justify;
 }
-#about .valeursMissions .overlay .valeursMissionsContainer div i {
-  color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
-}
-#about .valeursMissions .overlay .valeursMissionsContainer div h3 {
+#about .valeursMissions .overlay .valeursMissionsContainer div h2 {
   color: #ffffff;
   padding-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  text-align: justify;
 }
 #about .valeursMissions .overlay .valeursMissionsContainer div p {
   width: 100%;
   margin: 0 auto;
   color: #ffffff;
+  text-align: justify;
 }
 #about .recolte {
   padding: 50px 0;
@@ -496,9 +487,8 @@ footer .copyright p i {
 #about .recolte .recolteContainer img {
   background: #ffffff;
   width: 100%;
-  padding: 10px;
-  -webkit-box-shadow: 0 0 10px #2d6c7a;
-          box-shadow: 0 0 10px #2d6c7a;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #about .cta {
   background: url(../img/actus.webp) center/cover;
@@ -723,4 +713,24 @@ footer .copyright p i {
 #contact .cta .overlay .ctaContainer p {
   color: #ffffff;
   padding: 30px 20px 50px;
+}
+
+#legal .legalContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#legal .legalContainer h2 {
+  padding-bottom: 30px;
+  text-align: justify;
+}
+#legal .legalContainer p {
+  padding-bottom: 30px;
+  text-align: justify;
+}
+#legal .legalContainer a {
+  color: #2d6c7a;
+}
+#legal .legalContainer a:hover {
+  color: #000000;
 }/*# sourceMappingURL=index.css.map */

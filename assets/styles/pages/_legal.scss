@@ -1,0 +1,24 @@
+#legal {
+  .legalContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    h2 {
+      padding-bottom: 30px;
+      text-align: justify;
+    }
+
+    p {
+      padding-bottom: 30px;
+      text-align: justify;
+    }
+
+    a {
+      color: $color1;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
