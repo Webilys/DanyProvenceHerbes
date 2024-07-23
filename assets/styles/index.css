@@ -743,4 +743,24 @@ footer .copyright p i {
 #legal .legalContainer ul li {
   list-style-position: inside;
   text-align: justify;
+}
+
+#product .cta {
+  background: url(../img/actus.webp) center/cover;
+  background-attachment: fixed;
+}
+#product .cta .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#product .cta .overlay .ctaContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#product .cta .overlay .ctaContainer h2 {
+  color: #ffffff;
+}
+#product .cta .overlay .ctaContainer p {
+  color: #ffffff;
+  padding: 30px 20px 50px;
 }/*# sourceMappingURL=index.css.map */
