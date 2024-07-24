@@ -801,6 +801,13 @@ footer .copyright p i {
   margin: 0 auto;
   padding: 50px 0;
 }
+#article .articleContainer img {
+  width: 310px;
+  margin: 0 auto 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 360px;
+}
 #article .articleContainer h2,
 #article .articleContainer p {
   padding-bottom: 30px;
