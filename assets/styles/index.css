@@ -199,6 +199,7 @@ header .overlay .title-page {
 header .overlay .title-page .titlePage {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  line-height: 40px;
 }
 header .overlay .title-page p {
   color: #ffffff;
@@ -791,6 +792,36 @@ footer .copyright p i {
   color: #ffffff;
 }
 #product .cta .overlay .ctaContainer p {
+  color: #ffffff;
+  padding: 30px 20px 50px;
+}
+
+#article .articleContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#article .articleContainer h2,
+#article .articleContainer p {
+  padding-bottom: 30px;
+  text-align: justify;
+}
+#article .cta {
+  background: url(../img/actus.webp) center/cover;
+  background-attachment: fixed;
+}
+#article .cta .overlay {
+  background: rgba(45, 108, 122, 0.5);
+  padding: 50px 0;
+}
+#article .cta .overlay .ctaContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#article .cta .overlay .ctaContainer h2 {
+  color: #ffffff;
+}
+#article .cta .overlay .ctaContainer p {
   color: #ffffff;
   padding: 30px 20px 50px;
 }/*# sourceMappingURL=index.css.map */
