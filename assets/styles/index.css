@@ -745,6 +745,36 @@ footer .copyright p i {
   text-align: justify;
 }
 
+#product .product .productContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#product .product .productContainer img {
+  width: 100%;
+}
+#product .product .productContainer h2 {
+  padding-bottom: 30px;
+}
+#product .descriptionProduct {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#product .descriptionProduct h2,
+#product .descriptionProduct p {
+  text-align: justify;
+  padding-bottom: 30px;
+}
 #product .cta {
   background: url(../img/actus.webp) center/cover;
   background-attachment: fixed;
