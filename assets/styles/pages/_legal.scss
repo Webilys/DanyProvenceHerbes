@@ -6,6 +6,10 @@
     h2 {
       padding-bottom: 30px;
       text-align: justify;
+
+      @media screen and (max-width: 875px) {
+        text-align: left;
+      }
     }
 
     p {

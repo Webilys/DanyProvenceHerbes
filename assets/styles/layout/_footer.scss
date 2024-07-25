@@ -9,6 +9,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
+    @media screen and (max-width: 875px) {
+      grid-template-columns: 1fr;
+    }
+
     div {
       padding: 20px;
     }
@@ -46,6 +50,11 @@ footer {
   }
 
   .copyright {
+    @media screen and (max-width: 875px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     p {
       font-size: 0.9rem;
       i {

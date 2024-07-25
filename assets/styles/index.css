@@ -99,6 +99,7 @@ header {
   background-attachment: fixed;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 header .overlay {
   background: rgba(45, 108, 122, 0.5);
@@ -107,7 +108,7 @@ header .overlay .header {
   display: grid;
   grid-template-columns: 30% 70%;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
   header .overlay .header {
     grid-template-columns: 80% 20%;
     width: 80%;
@@ -132,7 +133,7 @@ header .overlay .header div img:hover {
 header .overlay .header div .menu-icons {
   display: none;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
   header .overlay .header div .menu-icons {
     display: block;
   }
@@ -141,7 +142,7 @@ header .overlay .header div .menu-icons i {
   font-size: 2rem;
   color: #ffffff;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
   header .overlay .header div .menu-icons i {
     margin-top: 50px;
   }
@@ -149,7 +150,7 @@ header .overlay .header div .menu-icons i {
 header .overlay .header div .menu-icons #close-icon {
   display: none;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
   header .overlay .header div nav {
     display: none;
   }
@@ -158,6 +159,13 @@ header .overlay .header div nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  width: 80vw;
+  background: rgba(45, 108, 122, 0.9);
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -165,16 +173,26 @@ header .overlay .header div nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
   header .overlay .header div nav ul {
     display: block;
   }
 }
 header .overlay .header div nav ul li {
   list-style: none;
-  margin: 50px 20px 0;
+  padding: 20px 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+@media screen and (max-width: 1125px) {
+  header .overlay .header div nav ul li {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ffffff;
+  }
+  header .overlay .header div nav ul li:last-of-type {
+    border-bottom: none;
+  }
 }
 header .overlay .header div nav ul li a {
   text-decoration: none;
@@ -188,18 +206,33 @@ header .overlay .header div nav ul li a:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 1125px) {
+  header .overlay .header div nav ul li a:hover {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 header .overlay .header div nav ul li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+@media screen and (max-width: 1125px) {
+  header .overlay .header div nav ul li:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 header .overlay .title-page {
   width: 80%;
   margin: 0 auto;
 }
+header .overlay .title-page h1 {
+  line-height: 40px;
+}
 header .overlay .title-page .titlePage {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  line-height: 40px;
 }
 header .overlay .title-page p {
   color: #ffffff;
@@ -232,6 +265,11 @@ footer .footerContainer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+@media screen and (max-width: 875px) {
+  footer .footerContainer {
+    grid-template-columns: 1fr;
+  }
+}
 footer .footerContainer div {
   padding: 20px;
 }
@@ -260,6 +298,12 @@ footer #separateur {
   color: #2d6c7a;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 875px) {
+  footer .copyright {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 footer .copyright p {
   font-size: 0.9rem;
 }
@@ -279,6 +323,11 @@ footer .copyright p i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 875px) {
+  #home .products .productsContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #home .products .productsContainer a {
   cursor: pointer;
@@ -327,11 +376,21 @@ footer .copyright p i {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 1190px) {
+  #home .about {
+    grid-template-columns: 1fr;
+  }
+}
 #home .about div {
   text-align: justify;
 }
 #home .about div h2 {
   text-align: justify;
+}
+@media screen and (max-width: 1190px) {
+  #home .about div h2 {
+    padding-bottom: 30px;
+  }
 }
 #home .about div p {
   padding-bottom: 50px;
@@ -355,6 +414,11 @@ footer .copyright p i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 875px) {
+  #home .actus .overlay .actusContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #home .actus .overlay .actusContainer a {
   background: rgba(45, 108, 122, 0.25);
@@ -386,6 +450,16 @@ footer .copyright p i {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
+@media screen and (max-width: 875px) {
+  #home .actus .overlay .actusContainer a img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home .actus .overlay .actusContainer a img {
+    width: 80%;
+  }
+}
 #home .actus .overlay .actusContainer a .actu h3 {
   color: #ffffff;
 }
@@ -407,8 +481,18 @@ footer .copyright p i {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 875px) {
+  #about .about {
+    grid-template-columns: 1fr;
+  }
+}
 #about .about div {
   text-align: justify;
+}
+@media screen and (max-width: 875px) {
+  #about .about div {
+    text-align: center;
+  }
 }
 #about .about div img {
   width: 80%;
@@ -418,8 +502,18 @@ footer .copyright p i {
   text-align: justify;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 875px) {
+  #about .about div h2 {
+    text-align: center;
+  }
+}
 #about .about div p {
   text-align: justify;
+}
+@media screen and (max-width: 875px) {
+  #about .about div p {
+    text-align: center;
+  }
 }
 #about .valeursMissions {
   background: url(../img/figure1.webp) center/cover;
@@ -442,6 +536,11 @@ footer .copyright p i {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 875px) {
+  #about .valeursMissions .overlay .valeursMissionsContainer {
+    grid-template-columns: 1fr;
+  }
+}
 #about .valeursMissions .overlay .valeursMissionsContainer div {
   width: 100%;
   height: 100%;
@@ -452,17 +551,32 @@ footer .copyright p i {
   background: rgba(45, 108, 122, 0.25);
   text-align: justify;
 }
+@media screen and (max-width: 875px) {
+  #about .valeursMissions .overlay .valeursMissionsContainer div {
+    text-align: center;
+  }
+}
 #about .valeursMissions .overlay .valeursMissionsContainer div h2 {
   color: #ffffff;
   padding-bottom: 30px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
   text-align: justify;
 }
+@media screen and (max-width: 875px) {
+  #about .valeursMissions .overlay .valeursMissionsContainer div h2 {
+    text-align: center;
+  }
+}
 #about .valeursMissions .overlay .valeursMissionsContainer div p {
   width: 100%;
   margin: 0 auto;
   color: #ffffff;
   text-align: justify;
+}
+@media screen and (max-width: 875px) {
+  #about .valeursMissions .overlay .valeursMissionsContainer div p {
+    text-align: center;
+  }
 }
 #about .recolte {
   padding: 50px 0;
@@ -486,6 +600,11 @@ footer .copyright p i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 875px) {
+  #about .recolte .recolteContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #about .recolte .recolteContainer img {
   background: #ffffff;
@@ -541,8 +660,26 @@ footer .copyright p i {
 #nos-produits .productsContainer #product3 {
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 875px) {
+  #nos-produits .productsContainer #product1,
+  #nos-produits .productsContainer #product3 {
+    grid-template-columns: 1fr;
+  }
+}
 #nos-produits .productsContainer #product2 {
   grid-template-columns: 70% 30%;
+}
+@media screen and (max-width: 875px) {
+  #nos-produits .productsContainer #product2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 30px auto;
+  }
 }
 #nos-produits .cta {
   background: url(../img/actus.webp) center/cover;
@@ -573,6 +710,11 @@ footer .copyright p i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 875px) {
+  #actualites .actus .actusContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #actualites .actus .actusContainer a {
   background: rgba(45, 108, 122, 0.25);
@@ -731,6 +873,11 @@ footer .copyright p i {
   padding-bottom: 30px;
   text-align: justify;
 }
+@media screen and (max-width: 875px) {
+  #legal .legalContainer h2 {
+    text-align: left;
+  }
+}
 #legal .legalContainer p {
   padding-bottom: 30px;
   text-align: justify;
@@ -763,6 +910,12 @@ footer .copyright p i {
   margin: 0 auto;
   padding-top: 50px;
 }
+@media screen and (max-width: 875px) {
+  #product .product .productContainer {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+}
 #product .product .productContainer img {
   width: 100%;
 }
@@ -773,6 +926,11 @@ footer .copyright p i {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 875px) {
+  #product .descriptionProduct {
+    padding-top: 50px;
+  }
 }
 #product .descriptionProduct h2,
 #product .descriptionProduct p {
@@ -815,6 +973,11 @@ footer .copyright p i {
 #article .articleContainer p {
   padding-bottom: 30px;
   text-align: justify;
+}
+@media screen and (max-width: 875px) {
+  #article .articleContainer h2 {
+    text-align: left;
+  }
 }
 #article .cta {
   background: url(../img/actus.webp) center/cover;

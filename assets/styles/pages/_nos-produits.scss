@@ -26,10 +26,20 @@
     #product1,
     #product3 {
       grid-template-columns: 30% 70%;
+
+      @media screen and (max-width: 875px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     #product2 {
       grid-template-columns: 70% 30%;
+
+      @media screen and (max-width: 875px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 30px auto;
+      }
     }
   }
 

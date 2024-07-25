@@ -9,6 +9,10 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
 
+      @media screen and (max-width: 875px) {
+        grid-template-columns: 1fr;
+      }
+
       a {
         background: $color1-25;
         border: 1px solid $color1;

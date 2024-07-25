@@ -12,6 +12,10 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
 
+      @media screen and (max-width: 875px) {
+        grid-template-columns: 1fr;
+      }
+
       a {
         cursor: pointer;
         transition: 0.2s;
@@ -60,11 +64,19 @@
     display: grid;
     grid-template-columns: 30% 70%;
 
+    @media screen and (max-width: 1190px) {
+      grid-template-columns: 1fr;
+    }
+
     div {
       text-align: justify;
 
       h2 {
         text-align: justify;
+
+        @media screen and (max-width: 1190px) {
+          padding-bottom: 30px;
+        }
       }
       p {
         padding-bottom: 50px;
@@ -92,6 +104,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
 
+        @media screen and (max-width: 875px) {
+          grid-template-columns: 1fr;
+        }
+
         a {
           background: $color1-25;
           border: 1px solid $white;
@@ -112,6 +128,14 @@
             margin: 20px 20px 30px;
             border-radius: 360px;
             box-shadow: 0 0 10px $whiteShadow;
+
+            @media screen and (max-width: 875px) {
+              width: 50%;
+            }
+
+            @media screen and (max-width: 500px) {
+              width: 80%;
+            }
           }
 
           .actu {
