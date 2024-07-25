@@ -13,6 +13,7 @@
       gap: 20px;
 
       a {
+        cursor: pointer;
         transition: 0.2s;
 
         &:hover {
@@ -96,10 +97,11 @@
           border: 1px solid $white;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: start;
           padding: 20px;
           box-shadow: 0 0 10px $white;
           transition: 0.2s;
+          cursor: pointer;
 
           &:hover {
             transform: scale(1.05);
