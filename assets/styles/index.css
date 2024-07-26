@@ -159,13 +159,7 @@ header .overlay .header div nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 150px;
-  left: 10%;
-  width: 80vw;
-  background: rgba(45, 108, 122, 0.9);
-  -webkit-box-shadow: 0 0 10px #ffffff;
-          box-shadow: 0 0 10px #ffffff;
+  margin-top: 40px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -176,6 +170,14 @@ header .overlay .header div nav ul {
 @media screen and (max-width: 1125px) {
   header .overlay .header div nav ul {
     display: block;
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    width: 80vw;
+    background: rgba(45, 108, 122, 0.9);
+    -webkit-box-shadow: 0 0 10px #ffffff;
+            box-shadow: 0 0 10px #ffffff;
+    margin-top: 0;
   }
 }
 header .overlay .header div nav ul li {
