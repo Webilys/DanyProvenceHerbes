@@ -710,7 +710,6 @@ footer .copyright p i {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 @media screen and (max-width: 875px) {
@@ -747,6 +746,16 @@ footer .copyright p i {
   border-radius: 360px;
   -webkit-box-shadow: 0 0 10px #2d6c7a;
           box-shadow: 0 0 10px #2d6c7a;
+}
+#actualites .actus .actusContainer a .actu {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #actualites .actus .actusContainer a .actu h3 {
   color: #2d6c7a;
@@ -973,13 +982,21 @@ footer .copyright p i {
 }
 #article .articleContainer h2,
 #article .articleContainer p {
-  padding-bottom: 30px;
   text-align: justify;
+}
+#article .articleContainer h2 {
+  padding: 30px 0;
 }
 @media screen and (max-width: 875px) {
   #article .articleContainer h2 {
     text-align: left;
   }
+}
+#article .articleContainer ul {
+  padding-top: 10px;
+}
+#article .articleContainer ul li {
+  text-align: justify;
 }
 #article .cta {
   background: url(../img/actus.webp) center/cover;

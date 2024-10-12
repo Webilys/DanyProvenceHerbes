@@ -6,7 +6,7 @@
       width: 80%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
       gap: 20px;
 
       @media screen and (max-width: 875px) {
@@ -36,6 +36,10 @@
         }
 
         .actu {
+          display: grid;
+          grid-template-columns: 30% 70%;
+          justify-content: center;
+          align-items: center;
           h3 {
             color: $color1;
             text-shadow: 0 0 10px $white;
