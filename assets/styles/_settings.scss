@@ -34,6 +34,7 @@ $whiteShadow: rgba(255, 255, 255, 0.25);
 body {
   color: $text;
   line-height: 25px;
+  animation: fadeIn 1s linear;
 }
 
 h1,
@@ -59,4 +60,25 @@ a:focus,
 a:visited {
   text-decoration: none;
   font-weight: normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
